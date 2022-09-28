@@ -2218,6 +2218,10 @@ public class DTLSConnector implements Connector, PersistentConnector, Persistent
 			if (channel != null) {
 				// context
 				Attributes attributes = new Attributes();
+
+				//dtls sequence number
+				attributes.add(DtlsEndpointContext.DTLS_SEQUENCE_NUMBER, record.getSequenceNumber());
+
 				if (newest) {
 					attributes.add(DtlsEndpointContext.KEY_NEWEST_RECORD, Boolean.TRUE);
 				}

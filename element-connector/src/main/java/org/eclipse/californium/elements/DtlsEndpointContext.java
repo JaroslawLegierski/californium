@@ -56,6 +56,15 @@ public class DtlsEndpointContext extends MapBasedEndpointContext {
 	 */
 	public static final Definition<Long> KEY_HANDSHAKE_TIMESTAMP = new Definition<>("DTLS_HANDSHAKE_TIMESTAMP",
 			Long.class, ATTRIBUTE_DEFINITIONS);
+
+	/**
+	 * The name of the attribute that contains the dtls packet sequence number
+	 * during the DTLS session as {@link Number}.
+	 *
+	 *
+	 */
+	public static final Definition<Long> DTLS_SEQUENCE_NUMBER = new Definition<>("DTLS_SEQUENCE_NUMBER",
+			Long.class, ATTRIBUTE_DEFINITIONS);
 	/**
 	 * The name of the attribute that contains the DTLS Connection ID for
 	 * incoming records from the other peer as {@link Bytes}, if used.
