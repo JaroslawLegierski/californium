@@ -63,8 +63,8 @@ public class DtlsEndpointContext extends MapBasedEndpointContext {
 	 *
 	 *
 	 */
-	public static final Definition<Long> DTLS_SEQUENCE_NUMBER = new Definition<>("DTLS_SEQUENCE_NUMBER",
-			Long.class, ATTRIBUTE_DEFINITIONS);
+	public static final Definition<Long> DTLS_SEQUENCE_NUMBER = new Definition<>(
+			KEY_PREFIX_NONE_CRITICAL + "DTLS_SEQUENCE_NUMBER", Long.class, ATTRIBUTE_DEFINITIONS);
 	/**
 	 * The name of the attribute that contains the DTLS Connection ID for
 	 * incoming records from the other peer as {@link Bytes}, if used.
